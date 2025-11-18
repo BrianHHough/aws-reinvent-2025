@@ -18,6 +18,9 @@ import CustomChannelHeader from './ChannelHeader';
 const FASTAPI_URL =
   process.env.NEXT_PUBLIC_FASTAPI_URL || 'http://127.0.0.1:8000';
 
+// 🎯 SPOTLIGHT MODE: Set to true to add a dark overlay behind the chatbot
+const SPOTLIGHT_MODE = false;
+
 type StreamConfig = {
   apiKey: string;
   token: string;
@@ -114,6 +117,16 @@ export default function StreamChatWidget() {
 
   return (
     <>
+      {/* Spotlight Mode Overlay */}
+      {SPOTLIGHT_MODE && isOpen && (
+        <div
+          className="fixed inset-0 z-40 transition-opacity duration-300"
+          style={{ backgroundColor: 'rgba(0, 0, 0, 0.8)' }}
+          onClick={() => setIsOpen(false)}
+          aria-label="Close chat overlay"
+        />
+      )}
+
       {/* Floating Chat Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
