@@ -1,0 +1,310 @@
+{
+  "sample_vectors": {
+    "employee_records": [
+      {
+        "id": "emp_001",
+        "content": "Sarah Chen is a Senior Software Engineer in the Payments Platform team, reporting to Michael Rodriguez (VP of Engineering). Based in Seattle, WA. Joined FinStack in March 2022. Salary: $185,000. Skills: Python, FastAPI, PostgreSQL, AWS. Currently working on Payment Gateway V3 project. Performance rating: Exceeds Expectations. Email: sarah.chen@finstack.com, Phone: +1-206-555-0123",
+        "metadata": {
+          "doc_type": "employee",
+          "department": "engineering",
+          "location": "seattle",
+          "salary_band": "L5",
+          "salary": 185000,
+          "manager_email": "michael.rodriguez@finstack.com",
+          "team": "payments-platform",
+          "start_date": "2022-03-15",
+          "access_level": "confidential"
+        }
+      },
+      {
+        "id": "emp_002",
+        "content": "James Wilson is the Chief Financial Officer at FinStack. Based in New York, NY. Compensation: $425,000 base + $200,000 equity annually. Joined in 2020 as VP Finance, promoted to CFO in 2023. Reports directly to CEO. Manages team of 45 across Finance, Accounting, and FP&A. Email: james.wilson@finstack.com, Phone: +1-212-555-0199",
+        "metadata": {
+          "doc_type": "employee",
+          "department": "finance",
+          "location": "new-york",
+          "salary_band": "exec",
+          "salary": 425000,
+          "equity": 200000,
+          "title": "Chief Financial Officer",
+          "reports_to": "ceo@finstack.com",
+          "start_date": "2020-06-01",
+          "access_level": "highly_confidential"
+        }
+      },
+      {
+        "id": "emp_003",
+        "content": "Maria Garcia is a Customer Success Manager in the Enterprise Sales team. Based in Austin, TX. Salary: $95,000 + commission. Manages 15 enterprise accounts including HealthCorp, TechVentures, and GlobalBank. Customer satisfaction score: 4.8/5.0. Email: maria.garcia@finstack.com",
+        "metadata": {
+          "doc_type": "employee",
+          "department": "sales",
+          "location": "austin",
+          "salary_band": "L3",
+          "salary": 95000,
+          "team": "enterprise-success",
+          "accounts_managed": 15,
+          "access_level": "internal"
+        }
+      }
+    ],
+    "customer_records": [
+      {
+        "id": "cust_001",
+        "content": "HealthCorp Inc. - Enterprise customer since 2023. Primary contact: Dr. Robert Kim (CTO), robert.kim@healthcorp.com, +1-415-555-8742. Annual contract value: $580,000. Payment method: Corporate Amex ending in 4729. 2,500 active users. Integration: SAML SSO + API. Support tier: Premium 24/7. Recent issues: None. Renewal date: 2025-09-30. Expansion opportunity: Additional 1,000 seats discussed.",
+        "metadata": {
+          "doc_type": "customer",
+          "customer_id": "cust_001",
+          "tier": "enterprise",
+          "arr": 580000,
+          "industry": "healthcare",
+          "employee_count": 2500,
+          "primary_contact_email": "robert.kim@healthcorp.com",
+          "payment_method": "amex_4729",
+          "support_tier": "premium",
+          "pii_included": true,
+          "renewal_date": "2025-09-30"
+        }
+      },
+      {
+        "id": "cust_002",
+        "content": "TechVentures LLC - Mid-market customer. Contact: Jessica Martinez (VP Ops), j.martinez@techventures.io, +1-650-555-3391. ARR: $84,000. Payment: Bank transfer from Chase account ***1847. 150 users. Implemented Q2 2024. Support tier: Business. Recent ticket: Integration issues resolved on 2025-01-10. CSM: Maria Garcia. Upsell potential: Premium features.",
+        "metadata": {
+          "doc_type": "customer",
+          "customer_id": "cust_002",
+          "tier": "mid-market",
+          "arr": 84000,
+          "industry": "technology",
+          "employee_count": 150,
+          "primary_contact_email": "j.martinez@techventures.io",
+          "payment_method": "bank_transfer",
+          "csm": "maria.garcia@finstack.com",
+          "pii_included": true
+        }
+      },
+      {
+        "id": "cust_003",
+        "content": "GlobalBank - Top enterprise customer. Contact: Jennifer Wu (SVP Technology), jennifer.wu@globalbank.com. Contract value: $2.4M annually. Custom enterprise agreement. 12,000 licensed users. Payment: Wire transfer quarterly. White-glove support with dedicated TAM. Recent security audit completed successfully. Contract includes SLA guarantees: 99.99% uptime. Strategic account - executive sponsor: CEO.",
+        "metadata": {
+          "doc_type": "customer",
+          "customer_id": "cust_003",
+          "tier": "strategic",
+          "arr": 2400000,
+          "industry": "financial-services",
+          "employee_count": 12000,
+          "primary_contact_email": "jennifer.wu@globalbank.com",
+          "support_tier": "white-glove",
+          "executive_sponsor": "ceo@finstack.com",
+          "pii_included": true,
+          "compliance": ["SOC2", "PCI-DSS", "ISO27001"]
+        }
+      }
+    ],
+    "financial_records": [
+      {
+        "id": "fin_001",
+        "content": "Q4 2024 Engineering Budget Summary: Total allocated: $12.5M. Actual spend: $11.8M (94% utilization). Breakdown: Salaries & Benefits: $8.2M, Cloud Infrastructure (AWS): $2.1M, Tools & Software: $890K, Contractors: $610K. Remaining budget: $700K approved for Q1 hiring. Department headcount: 145 FTE.",
+        "metadata": {
+          "doc_type": "financial",
+          "fiscal_quarter": "Q4-2024",
+          "department": "engineering",
+          "budget_allocated": 12500000,
+          "actual_spend": 11800000,
+          "confidential": true,
+          "access_level": "exec_finance_only"
+        }
+      },
+      {
+        "id": "fin_002",
+        "content": "Series B Funding Details (Confidential): $45M raised in September 2024. Lead investor: Sequoia Capital ($30M). Participating: Andreessen Horowitz ($10M), existing investors ($5M). Post-money valuation: $380M. Use of funds: 40% product development, 30% sales & marketing, 20% international expansion, 10% operations. Board seat granted to Sequoia partner.",
+        "metadata": {
+          "doc_type": "financial",
+          "record_type": "funding",
+          "amount": 45000000,
+          "date": "2024-09-15",
+          "confidential": true,
+          "access_level": "board_exec_only",
+          "classification": "highly_confidential"
+        }
+      },
+      {
+        "id": "fin_003",
+        "content": "2025 Revenue Forecast: Q1: $8.2M, Q2: $10.1M, Q3: $11.8M, Q4: $14.3M. Total year: $44.4M (65% growth YoY). ARR target end of 2025: $58M. Assumptions: 15% monthly customer growth, 8% average price increase, 5% churn rate. Stretch goal with strategic deals: $52M year total.",
+        "metadata": {
+          "doc_type": "financial",
+          "record_type": "forecast",
+          "fiscal_year": "2025",
+          "total_revenue": 44400000,
+          "confidential": true,
+          "access_level": "exec_finance_only"
+        }
+      }
+    ],
+    "project_documentation": [
+      {
+        "id": "proj_001",
+        "content": "Payment Gateway V3 - Technical Design Document. Objective: Rebuild payment processing to support multiple processors (Stripe, Adyen, PayPal) with intelligent routing. Architecture: Event-driven microservices using Python FastAPI, PostgreSQL, Redis, AWS SQS/SNS. Expected performance: 10K transactions/second, <200ms p95 latency. Security: PCI-DSS Level 1 compliant, tokenization, end-to-end encryption. Launch: Q2 2025. Team: 8 engineers led by Sarah Chen. Budget: $2.1M. Risk: Timeline dependent on Adyen integration complexity.",
+        "metadata": {
+          "doc_type": "project",
+          "project_name": "payment-gateway-v3",
+          "status": "in_progress",
+          "team": "payments-platform",
+          "lead": "sarah.chen@finstack.com",
+          "budget": 2100000,
+          "target_launch": "Q2-2025",
+          "confidentiality": "internal"
+        }
+      },
+      {
+        "id": "proj_002",
+        "content": "International Expansion - EMEA Launch Plan. Target markets: UK, Germany, France. Launch date: July 2025. Requirements: GDPR compliance, local payment methods, multi-currency, localized support. Partnerships: Stripe for payments, AWS eu-west-1 for hosting. Headcount: Hire 12 people (4 sales, 3 engineering, 3 support, 2 ops). Investment: $3.5M first year. Revenue target: $8M ARR by end of 2026.",
+        "metadata": {
+          "doc_type": "project",
+          "project_name": "emea-expansion",
+          "status": "planning",
+          "geographic_region": "EMEA",
+          "investment": 3500000,
+          "confidentiality": "confidential",
+          "executive_sponsor": "ceo@finstack.com"
+        }
+      }
+    ],
+    "security_incidents": [
+      {
+        "id": "sec_001",
+        "content": "Incident Report SEC-2024-089: Unauthorized database access attempt detected on 2024-12-03 at 14:32 UTC. Source IP: 185.220.101.47 (TOR exit node). Target: Production customer database. Attack vector: SQL injection attempt via API endpoint /api/v2/customers/search. Status: Blocked by WAF. No data exfiltration. Remediation: Parameterized queries implemented, endpoint rate limiting added. Responsible team: Security Engineering. Severity: High. Disclosed to affected customers: No (prevented).",
+        "metadata": {
+          "doc_type": "security_incident",
+          "incident_id": "SEC-2024-089",
+          "severity": "high",
+          "date": "2024-12-03",
+          "attack_type": "sql_injection",
+          "status": "resolved",
+          "data_compromised": false,
+          "confidential": true,
+          "access_level": "security_exec_only"
+        }
+      }
+    ],
+    "communications": [
+      {
+        "id": "comm_001",
+        "content": "Slack message from #exec-team (2025-01-15): @ceo: Board meeting prep - we need to discuss the Series C strategy. Current runway is 18 months. VCs are asking about path to profitability. @cfo will present three scenarios. Meeting Friday 2pm. @vp-sales prepare customer wins deck. Confidential - do not share outside exec team.",
+        "metadata": {
+          "doc_type": "communication",
+          "channel": "#exec-team",
+          "sender": "ceo@finstack.com",
+          "date": "2025-01-15",
+          "participants": ["exec-team"],
+          "confidential": true,
+          "access_level": "exec_only"
+        }
+      },
+      {
+        "id": "comm_002",
+        "content": "All-Hands Meeting Notes (2025-01-08): CEO announced Q4 results - $12.8M revenue (beat target by 8%). Customer count: 847 (up 22% QoQ). New hires: 23 people joined in Q4. Promotions: 12 people promoted. Company priorities for 2025: 1) Scale to $50M ARR, 2) Launch EMEA, 3) Achieve gross margin of 75%, 4) Build world-class AI features. Open Q&A highlights: Remote work policy staying flexible, Summer offsite planned for June in Tahoe.",
+        "metadata": {
+          "doc_type": "communication",
+          "event_type": "all-hands",
+          "date": "2025-01-08",
+          "attendees": "all_company",
+          "confidential": false
+        }
+      }
+    ],
+    "technical_docs": [
+      {
+        "id": "tech_001",
+        "content": "Production Database Schema - Customers Table: customer_id (PK), company_name, primary_contact_name, email, phone, billing_address, payment_method_encrypted, payment_token, arr_value, contract_start_date, contract_end_date, support_tier, account_status, created_at, updated_at. Indexes on: email, arr_value, contract_end_date. Encryption: AES-256 for payment_method. Access: Read replica for analytics, write restricted to payment service.",
+        "metadata": {
+          "doc_type": "technical",
+          "category": "database_schema",
+          "database": "production",
+          "table": "customers",
+          "sensitive_data": true
+        }
+      },
+      {
+        "id": "tech_002",
+        "content": "AWS Infrastructure: Production runs in us-east-1. VPC: vpc-0a1b2c3d. Subnets: 3 public, 3 private across AZs. EKS cluster: finstack-prod (v1.28). RDS PostgreSQL: finstack-prod-db.xxxxx.us-east-1.rds.amazonaws.com (db.r6g.2xlarge). ElastiCache Redis: finstack-prod-cache. S3 buckets: finstack-prod-data, finstack-prod-backups. IAM roles: eks-node-role, app-service-role. Secrets: AWS Secrets Manager. Monitoring: CloudWatch + Datadog.",
+        "metadata": {
+          "doc_type": "technical",
+          "category": "infrastructure",
+          "environment": "production",
+          "cloud_provider": "aws",
+          "region": "us-east-1"
+        }
+      },
+      {
+        "id": "tech_003",
+        "content": "API Keys and Service Credentials (INTERNAL): Stripe API Key: sk_live_51MxxxxxxxxxxxxxxxxxxxxxYz3K2. Slack Bot Token: xoxb-4938xxxxxx-5029xxxxxx-xxxxxxxxxxxxxxxxxxxxxxxx. GitHub PAT: ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx. AWS Access Key: AKIA3XXXXXXXXXXXXXXX. Datadog API Key: 89f4xxxxxxxxxxxxxxxxxxxxxxxxxxxx. Stored in: AWS Secrets Manager (finstack/prod/api-keys). Rotation policy: 90 days. Last rotated: 2024-12-15.",
+        "metadata": {
+          "doc_type": "technical",
+          "category": "credentials",
+          "environment": "production",
+          "confidential": true,
+          "access_level": "devops_only",
+          "classification": "highly_confidential"
+        }
+      }
+    ],
+    "hr_records": [
+      {
+        "id": "hr_001",
+        "content": "Performance Review - Sarah Chen (2024 Annual): Overall Rating: Exceeds Expectations. Technical Skills: 5/5 - Expert in Python, system design. Leadership: 4/5 - Mentored 2 junior engineers effectively. Impact: Led Payment Gateway V3 project, delivered Q4 migration ahead of schedule. Areas for growth: Executive communication, stakeholder management. Compensation adjustment: $185K → $205K (10.8% increase). Equity refresh: 15,000 options. Promotion recommendation: Senior → Staff Engineer (approved for Q1 2025).",
+        "metadata": {
+          "doc_type": "hr",
+          "record_type": "performance_review",
+          "employee_id": "emp_001",
+          "review_period": "2024",
+          "rating": "exceeds_expectations",
+          "salary_new": 205000,
+          "confidential": true,
+          "access_level": "hr_manager_only"
+        }
+      },
+      {
+        "id": "hr_002",
+        "content": "Disciplinary Action - Employee ID emp_145: Incident date: 2024-11-20. Issue: Shared internal customer data in personal Slack workspace. Violation: Data security policy section 4.2. Action taken: Written warning, mandatory security training. Manager: notified. HR case #: 2024-HR-234. Follow-up: 30-day check-in scheduled. If repeated: Termination per employee handbook.",
+        "metadata": {
+          "doc_type": "hr",
+          "record_type": "disciplinary_action",
+          "employee_id": "emp_145",
+          "incident_date": "2024-11-20",
+          "severity": "warning",
+          "confidential": true,
+          "access_level": "hr_only"
+        }
+      }
+    ]
+  },
+  "ingestion_config": {
+    "embedding_model": "text-embedding-3-large",
+    "vector_dimensions": 3072,
+    "chunking_strategy": {
+      "method": "semantic",
+      "chunk_size": 1000,
+      "chunk_overlap": 200
+    },
+    "metadata_indexing": [
+      "doc_type",
+      "department",
+      "confidentiality",
+      "access_level",
+      "date"
+    ],
+    "pinecone_config": {
+      "index_name": "finstack-knowledge-base",
+      "metric": "cosine",
+      "pods": 2,
+      "replicas": 1,
+      "pod_type": "p2.x1"
+    }
+  },
+  "intentional_vulnerabilities": {
+    "no_rbac_filtering": "All vectors returned regardless of user permissions",
+    "metadata_leakage": "Sensitive metadata (salary, access_level) included in results",
+    "no_redaction": "PII, credentials, and confidential data stored in plaintext",
+    "global_search": "No tenant isolation - all users can search all data",
+    "no_audit_logging": "No tracking of who accessed what sensitive information"
+  }
+}
