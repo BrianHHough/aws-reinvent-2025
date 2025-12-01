@@ -19,7 +19,7 @@ env_path = Path(__file__).parent.parent / "app" / ".env"
 load_dotenv(dotenv_path=env_path)
 
 # Configuration
-FILENAME_TO_DELETE = "Corporate Memo.pdf"  # TODO: Update filename
+FILENAME_TO_DELETE = "Corporate Memo 2.pdf"  # TODO: Update filename
 
 def main():
     # Initialize Pinecone
