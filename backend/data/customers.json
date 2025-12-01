@@ -1,0 +1,181 @@
+[
+  {
+    "id": "cust_001",
+    "company_name": "HealthCorp Inc.",
+    "industry": "healthcare",
+    "tier": "enterprise",
+    "arr": 580000,
+    "employee_count": 2500,
+    "primary_contact": {
+      "name": "Dr. Robert Kim",
+      "title": "CTO",
+      "email": "robert.kim@healthcorp.com",
+      "phone": "+1-415-555-8742"
+    },
+    "payment_method": "Corporate Amex ending in 4729",
+    "contract_start": "2023-09-30",
+    "contract_end": "2025-09-30",
+    "support_tier": "premium",
+    "csm": "maria.garcia@finstack.com",
+    "active_users": 2500,
+    "integrations": ["SAML SSO", "API", "Salesforce"],
+    "recent_notes": "Expansion opportunity: Additional 1,000 seats discussed in Q4 2024"
+  },
+  {
+    "id": "cust_002",
+    "company_name": "TechVentures LLC",
+    "industry": "technology",
+    "tier": "mid-market",
+    "arr": 84000,
+    "employee_count": 150,
+    "primary_contact": {
+      "name": "Jessica Martinez",
+      "title": "VP Operations",
+      "email": "j.martinez@techventures.io",
+      "phone": "+1-650-555-3391"
+    },
+    "payment_method": "Bank transfer from Chase account ***1847",
+    "contract_start": "2024-04-01",
+    "contract_end": "2026-04-01",
+    "support_tier": "business",
+    "csm": "maria.garcia@finstack.com",
+    "active_users": 150,
+    "integrations": ["API", "Slack"],
+    "recent_notes": "Integration issues resolved 2025-01-10. Upsell potential: Premium features"
+  },
+  {
+    "id": "cust_003",
+    "company_name": "GlobalBank",
+    "industry": "financial-services",
+    "tier": "strategic",
+    "arr": 2400000,
+    "employee_count": 12000,
+    "primary_contact": {
+      "name": "Jennifer Wu",
+      "title": "SVP Technology",
+      "email": "jennifer.wu@globalbank.com",
+      "phone": "+1-212-555-9876"
+    },
+    "payment_method": "Wire transfer quarterly",
+    "contract_start": "2022-01-01",
+    "contract_end": "2026-12-31",
+    "support_tier": "white-glove",
+    "csm": "jennifer.wu@finstack.com",
+    "active_users": 12000,
+    "integrations": ["SAML SSO", "API", "Custom Integration"],
+    "compliance": ["SOC2", "PCI-DSS", "ISO27001"],
+    "sla": "99.99% uptime guarantee",
+    "executive_sponsor": "ceo@finstack.com",
+    "recent_notes": "Strategic account. Security audit completed successfully Q4 2024. Custom enterprise agreement with dedicated TAM."
+  },
+  {
+    "id": "cust_004",
+    "company_name": "RetailCo",
+    "industry": "retail",
+    "tier": "mid-market",
+    "arr": 156000,
+    "employee_count": 450,
+    "primary_contact": {
+      "name": "Michael Chen",
+      "title": "Director of Finance",
+      "email": "m.chen@retailco.com",
+      "phone": "+1-310-555-4567"
+    },
+    "payment_method": "Credit card Visa ***8923",
+    "contract_start": "2023-06-15",
+    "contract_end": "2025-06-15",
+    "support_tier": "business",
+    "csm": "maria.garcia@finstack.com",
+    "active_users": 450,
+    "integrations": ["API", "QuickBooks"],
+    "recent_notes": "Seasonal usage spikes during Q4. Very price sensitive. Renewal risk: medium."
+  },
+  {
+    "id": "cust_005",
+    "company_name": "InnovateLabs",
+    "industry": "technology",
+    "tier": "small-business",
+    "arr": 24000,
+    "employee_count": 45,
+    "primary_contact": {
+      "name": "Sarah Thompson",
+      "title": "CEO",
+      "email": "sarah@innovatelabs.io",
+      "phone": "+1-415-555-2341"
+    },
+    "payment_method": "Credit card Mastercard ***3456",
+    "contract_start": "2024-09-01",
+    "contract_end": "2025-09-01",
+    "support_tier": "standard",
+    "csm": "sales@finstack.com",
+    "active_users": 45,
+    "integrations": ["API"],
+    "recent_notes": "Fast growing startup. Potential to expand to mid-market within 12 months."
+  },
+  {
+    "id": "cust_006",
+    "company_name": "Manufacturing Solutions Group",
+    "industry": "manufacturing",
+    "tier": "enterprise",
+    "arr": 420000,
+    "employee_count": 1800,
+    "primary_contact": {
+      "name": "David Wilson",
+      "title": "CFO",
+      "email": "d.wilson@msg.com",
+      "phone": "+1-312-555-7890"
+    },
+    "payment_method": "ACH transfer",
+    "contract_start": "2022-11-01",
+    "contract_end": "2025-11-01",
+    "support_tier": "premium",
+    "csm": "maria.garcia@finstack.com",
+    "active_users": 1800,
+    "integrations": ["SAML SSO", "API", "SAP"],
+    "recent_notes": "Heavy API usage. Requested custom reporting features. Implementation partner: Deloitte."
+  },
+  {
+    "id": "cust_007",
+    "company_name": "EduTech Academy",
+    "industry": "education",
+    "tier": "mid-market",
+    "arr": 96000,
+    "employee_count": 280,
+    "primary_contact": {
+      "name": "Amanda Rodriguez",
+      "title": "VP Technology",
+      "email": "a.rodriguez@edutech.edu",
+      "phone": "+1-617-555-3456"
+    },
+    "payment_method": "Invoice net-30",
+    "contract_start": "2023-08-20",
+    "contract_end": "2025-08-20",
+    "support_tier": "business",
+    "csm": "maria.garcia@finstack.com",
+    "active_users": 280,
+    "integrations": ["SAML SSO", "Google Workspace"],
+    "recent_notes": "Non-profit pricing applied. Budget approval cycle is June-July. Very happy with support."
+  },
+  {
+    "id": "cust_008",
+    "company_name": "ConsultCorp International",
+    "industry": "consulting",
+    "tier": "enterprise",
+    "arr": 680000,
+    "employee_count": 3200,
+    "primary_contact": {
+      "name": "Richard Park",
+      "title": "CIO",
+      "email": "r.park@consultcorp.com",
+      "phone": "+1-202-555-8901"
+    },
+    "payment_method": "Wire transfer",
+    "contract_start": "2021-03-15",
+    "contract_end": "2026-03-15",
+    "support_tier": "premium",
+    "csm": "jennifer.wu@finstack.com",
+    "active_users": 3200,
+    "integrations": ["SAML SSO", "API", "Azure AD", "Workday"],
+    "recent_notes": "Multi-year contract. Strong relationship. Provided case study testimonial. Considering international expansion."
+  }
+]

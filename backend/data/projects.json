@@ -1,0 +1,141 @@
+[
+  {
+    "id": "proj_001",
+    "project_name": "Payment Gateway V3",
+    "status": "in_progress",
+    "team": "payments-platform",
+    "lead": "sarah.chen@finstack.com",
+    "objective": "Rebuild payment processing to support multiple processors (Stripe, Adyen, PayPal) with intelligent routing",
+    "architecture": "Event-driven microservices using Python FastAPI, PostgreSQL, Redis, AWS SQS/SNS",
+    "tech_stack": ["Python", "FastAPI", "PostgreSQL", "Redis", "AWS", "Kubernetes"],
+    "expected_performance": "10K transactions/second, <200ms p95 latency",
+    "security": "PCI-DSS Level 1 compliant, tokenization, end-to-end encryption",
+    "target_launch": "Q2-2025",
+    "budget": 2100000,
+    "team_size": 8,
+    "risks": "Timeline dependent on Adyen integration complexity. PCI compliance audit may require additional work.",
+    "milestones": {
+      "design_complete": "2024-11-30",
+      "stripe_integration": "2025-01-31",
+      "adyen_integration": "2025-03-15",
+      "pci_audit": "2025-04-30",
+      "launch": "2025-06-15"
+    }
+  },
+  {
+    "id": "proj_002",
+    "project_name": "EMEA Expansion",
+    "status": "planning",
+    "team": "international",
+    "lead": "ceo@finstack.com",
+    "objective": "Launch FinStack in European markets (UK, Germany, France)",
+    "target_markets": ["United Kingdom", "Germany", "France"],
+    "target_launch": "2025-07-01",
+    "requirements": [
+      "GDPR compliance",
+      "Local payment methods",
+      "Multi-currency support",
+      "Localized support team"
+    ],
+    "partnerships": {
+      "payments": "Stripe Europe",
+      "hosting": "AWS eu-west-1",
+      "legal": "DLA Piper"
+    },
+    "headcount_plan": {
+      "sales": 4,
+      "engineering": 3,
+      "support": 3,
+      "operations": 2
+    },
+    "investment": 3500000,
+    "revenue_target": "8M ARR by end of 2026",
+    "risks": "Regulatory complexity, local competition, hiring challenges in EU",
+    "executive_sponsor": "ceo@finstack.com"
+  },
+  {
+    "id": "proj_003",
+    "project_name": "AI-Powered Analytics",
+    "status": "discovery",
+    "team": "product-analytics",
+    "lead": "alexandra.santos@finstack.com",
+    "objective": "Build AI assistant to help customers understand their financial data and get insights",
+    "tech_stack": ["Python", "Anthropic Claude", "Pinecone", "React"],
+    "features": [
+      "Natural language querying of financial data",
+      "Automated insight generation",
+      "Anomaly detection",
+      "Predictive forecasting"
+    ],
+    "target_launch": "Q3-2025",
+    "budget": 1200000,
+    "team_size": 5,
+    "risks": "Data privacy concerns, hallucination risks, customer trust",
+    "competitive_advantage": "First-to-market with AI-native financial analytics"
+  },
+  {
+    "id": "proj_004",
+    "project_name": "Mobile App V2",
+    "status": "in_progress",
+    "team": "mobile",
+    "lead": "thomas.anderson@finstack.com",
+    "objective": "Rebuild mobile apps (iOS, Android) with React Native for feature parity with web",
+    "tech_stack": ["React Native", "TypeScript", "Redux"],
+    "target_launch": "Q1-2025",
+    "budget": 850000,
+    "team_size": 4,
+    "features": [
+      "Offline support",
+      "Push notifications",
+      "Biometric authentication",
+      "Real-time sync"
+    ],
+    "milestones": {
+      "beta": "2025-01-30",
+      "app_store_submission": "2025-02-28",
+      "ga": "2025-03-31"
+    }
+  },
+  {
+    "id": "proj_005",
+    "project_name": "Enterprise Security Hardening",
+    "status": "in_progress",
+    "team": "security",
+    "lead": "david.kim@finstack.com",
+    "objective": "Achieve SOC2 Type II compliance and implement advanced security features for enterprise customers",
+    "initiatives": [
+      "SOC2 Type II audit",
+      "Advanced threat detection",
+      "Security information and event management (SIEM)",
+      "Penetration testing program",
+      "Bug bounty program"
+    ],
+    "target_completion": "Q2-2025",
+    "budget": 600000,
+    "team_size": 3,
+    "external_partners": ["Vanta (compliance)", "HackerOne (bug bounty)"],
+    "expected_benefits": "Unlock enterprise deals requiring SOC2, improve security posture, reduce risk"
+  },
+  {
+    "id": "proj_006",
+    "project_name": "Dashboard Redesign",
+    "status": "completed",
+    "team": "product-design",
+    "lead": "alexandra.santos@finstack.com",
+    "objective": "Modernize dashboard UI/UX based on customer feedback",
+    "completed_date": "2024-12-15",
+    "budget": 420000,
+    "team_size": 6,
+    "results": {
+      "customer_satisfaction": "+18%",
+      "time_to_insight": "-35%",
+      "support_tickets": "-22%"
+    },
+    "key_changes": [
+      "Customizable widgets",
+      "Improved data visualization",
+      "Faster load times",
+      "Mobile-responsive design"
+    ]
+  }
+]

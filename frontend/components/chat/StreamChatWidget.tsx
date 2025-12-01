@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import {
   Chat,
   Channel,
-  ChannelHeader,
   MessageInput,
   MessageList,
   Thread,
@@ -12,7 +11,7 @@ import {
   useCreateChatClient,
 } from 'stream-chat-react';
 import type { Channel as StreamChannel, UserResponse } from 'stream-chat';
-import { MessageCircle, X, Sparkles } from 'lucide-react';
+import { MessageCircle, X, Sparkles, Maximize2, Minimize2 } from 'lucide-react';
 import CustomChannelHeader from './ChannelHeader';
 
 const FASTAPI_URL =
@@ -52,6 +51,7 @@ export default function StreamChatWidget() {
   const [config, setConfig] = useState<StreamConfig | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [isOpen, setIsOpen] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   // In a real app you'd get these from your auth/session
   const userId = 'demo_user_1';
@@ -138,7 +138,13 @@ export default function StreamChatWidget() {
 
       {/* Chat Panel */}
       {isOpen && (
-        <div className="fixed bottom-24 right-6 w-96 h-[600px] bg-white rounded-lg shadow-2xl border border-gray-200 overflow-hidden z-50 flex flex-col">
+        <div 
+          className={`fixed bg-white rounded-lg shadow-2xl border border-gray-200 overflow-hidden z-50 flex flex-col transition-all duration-300 ${
+            isExpanded 
+              ? 'bottom-6 left-[5vw] right-[5vw] top-6' 
+              : 'bottom-24 right-6 w-96 h-[600px]'
+          }`}
+        >
           {error ? (
             <div className="flex items-center justify-center h-full p-4 text-center">
               <div>
@@ -155,15 +161,24 @@ export default function StreamChatWidget() {
             </div>
           ) : (
             <>
-            <InnerChatWidget config={config} />
-            <button
-                onClick={handleClearChat}
-                className="absolute top-4 right-4 text-gray-500 hover:text-red-600 text-xs px-2 py-1 rounded hover:bg-gray-100 transition"
-                title="Clear chat history"
-              >
-                Clear
-              </button>
-              </>
+              <InnerChatWidget config={config} />
+              <div className="absolute top-4 right-4 flex gap-2">
+                <button
+                  onClick={() => setIsExpanded(!isExpanded)}
+                  className="text-gray-500 hover:text-blue-600 text-xs px-2 py-1 rounded hover:bg-gray-100 transition"
+                  title={isExpanded ? "Minimize chat" : "Expand chat"}
+                >
+                  {isExpanded ? <Minimize2 className="w-4 h-4" /> : <Maximize2 className="w-4 h-4" />}
+                </button>
+                <button
+                  onClick={handleClearChat}
+                  className="text-gray-500 hover:text-red-600 text-xs px-2 py-1 rounded hover:bg-gray-100 transition"
+                  title="Clear chat history"
+                >
+                  Clear
+                </button>
+              </div>
+            </>
           )}
         </div>
       )}

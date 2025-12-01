@@ -1,0 +1,93 @@
+[
+  {
+    "id": "kb_001",
+    "category": "policy",
+    "title": "Remote Work Policy",
+    "department": "hr",
+    "content": "FinStack supports flexible remote work for all employees. Employees can work from anywhere in the US with manager approval. International remote work requires legal approval. Home office stipend: $500/year. Co-working space reimbursement available up to $300/month. Required office presence: Quarterly team meetups (company-paid travel). Core collaboration hours: 10am-3pm PT for meetings.",
+    "last_updated": "2024-08-15",
+    "access_level": "all_employees"
+  },
+  {
+    "id": "kb_002",
+    "category": "policy",
+    "title": "Data Classification and Handling",
+    "department": "security",
+    "content": "Data Classification Levels: PUBLIC (marketing materials, press releases), INTERNAL (company policies, project docs - employees only), CONFIDENTIAL (customer data, financial info - need-to-know basis), HIGHLY CONFIDENTIAL (executive comp, M&A, legal - restricted access). All customer PII must be encrypted at rest and in transit. Access to production databases requires security team approval. Data retention: Customer data retained for 7 years after account closure. Employee data retained per legal requirements.",
+    "last_updated": "2024-11-01",
+    "access_level": "all_employees"
+  },
+  {
+    "id": "kb_003",
+    "category": "policy",
+    "title": "Expense Reimbursement Policy",
+    "department": "finance",
+    "content": "Submit expense reports within 30 days. Categories: Travel (flights, hotels, ground transportation), Meals (up to $75/day while traveling), Client Entertainment (pre-approval required over $200), Equipment (laptop accessories, monitors), Professional Development (conferences, courses with manager approval). Credit card: Company Amex for employees L4+. Reimbursement timeline: 2 weeks via direct deposit. Require receipts for all expenses over $25.",
+    "last_updated": "2024-06-20",
+    "access_level": "all_employees"
+  },
+  {
+    "id": "kb_004",
+    "category": "security_incident",
+    "title": "Incident SEC-2024-089: SQL Injection Attempt",
+    "department": "security",
+    "content": "INCIDENT REPORT: Unauthorized database access attempt detected on 2024-12-03 at 14:32 UTC. Source IP: 185.220.101.47 (TOR exit node). Target: Production customer database. Attack vector: SQL injection attempt via API endpoint /api/v2/customers/search. STATUS: Blocked by WAF (AWS WAF). No data exfiltration occurred. REMEDIATION: (1) Parameterized queries implemented across all endpoints, (2) Rate limiting added to search endpoints, (3) Additional WAF rules deployed, (4) Security training scheduled for engineering team. Severity: HIGH. Root cause: Insufficient input validation. Responsible team: Security Engineering. Disclosed to customers: NO (attack prevented).",
+    "incident_date": "2024-12-03",
+    "severity": "high",
+    "access_level": "security_exec_only"
+  },
+  {
+    "id": "kb_005",
+    "category": "technical",
+    "title": "Production Infrastructure Overview",
+    "department": "engineering",
+    "content": "PRODUCTION ENVIRONMENT: Cloud Provider: AWS, Region: us-east-1 (primary), us-west-2 (DR). VPC: vpc-0a1b2c3d. Compute: EKS cluster 'finstack-prod' running Kubernetes 1.28, 20 nodes (m5.2xlarge). Database: RDS PostgreSQL 15 (db.r6g.2xlarge) Multi-AZ, automated backups daily, 7-day retention. Cache: ElastiCache Redis cluster (cache.r6g.large). Storage: S3 buckets - finstack-prod-data (customer uploads), finstack-prod-backups (encrypted). CDN: CloudFront. Monitoring: DataDog + CloudWatch. Secrets: AWS Secrets Manager. Deployment: GitOps with ArgoCD, blue-green deployments.",
+    "last_updated": "2025-01-05",
+    "access_level": "engineering_devops"
+  },
+  {
+    "id": "kb_006",
+    "category": "technical",
+    "title": "API Authentication and Authorization",
+    "department": "engineering",
+    "content": "API AUTHENTICATION: OAuth 2.0 with JWT tokens. Token expiration: 1 hour (access token), 30 days (refresh token). API Keys: Available for server-to-server integrations, scoped by permission. Rate Limits: Standard tier: 100 req/min, Business: 500 req/min, Enterprise: 2000 req/min, Custom available. AUTHORIZATION: Role-based access control (RBAC). Roles: Admin (full access), Manager (team data), User (own data only). Permissions checked at API gateway level. Audit logging: All API calls logged to CloudWatch with user ID, endpoint, timestamp.",
+    "last_updated": "2024-10-12",
+    "access_level": "engineering"
+  },
+  {
+    "id": "kb_007",
+    "category": "process",
+    "title": "On-Call Rotation and Incident Response",
+    "department": "engineering",
+    "content": "ON-CALL SCHEDULE: Weekly rotation, Monday 9am PT to Monday 9am PT. Primary + Secondary on-call. Primary: Immediate response (<15 min). Secondary: Backup if primary unavailable. On-call compensation: $500/week stipend + time-off credits for major incidents. INCIDENT RESPONSE: Severity levels - P0 (service down, immediate response), P1 (major degradation, 1 hour response), P2 (minor issue, 4 hour response), P3 (low impact, next business day). P0/P1 incidents require incident commander, communication lead, and technical lead. Post-mortems required for all P0/P1 incidents within 48 hours. Tool: PagerDuty for alerting, Slack #incidents for coordination.",
+    "last_updated": "2024-09-30",
+    "access_level": "engineering"
+  },
+  {
+    "id": "kb_008",
+    "category": "hr",
+    "title": "Performance Review Process",
+    "department": "hr",
+    "content": "ANNUAL PERFORMANCE REVIEWS: Timing: Annual reviews in Q4 (October-November), Mid-year check-ins in Q2. Process: (1) Self-assessment, (2) Peer feedback (3-5 peers), (3) Manager review, (4) Calibration sessions, (5) Delivery and discussion. Rating scale: Exceptional (top 10%), Exceeds Expectations (20%), Meets Expectations (60%), Needs Improvement (10%), Unsatisfactory (rare). COMPENSATION REVIEW: Merit increases: 0-8% based on performance and market data. Promotion increases: 10-15% typically. Equity refreshes: For high performers and promotions. PROMOTION CRITERIA: L3->L4: 18+ months, consistently exceeds. L4->L5: 2+ years, senior impact. L5->L6: 3+ years, org-level impact. Review equity, scope, and leadership.",
+    "last_updated": "2024-10-01",
+    "access_level": "managers_hr"
+  },
+  {
+    "id": "kb_009",
+    "category": "company_info",
+    "title": "Company Overview and History",
+    "department": "general",
+    "content": "FINSTACK OVERVIEW: Founded in 2019 by Jane Smith (CEO) and Tom Brown (CTO). Mission: Simplify financial operations for modern businesses. Product: Cloud-based financial operations platform combining accounting, payments, and analytics. Customers: 850+ companies from startups to enterprises. Team: 400+ employees across US. Headquarters: San Francisco, CA with offices in Seattle, New York, Austin. Funding: $75M total raised (Seed: $5M, Series A: $25M, Series B: $45M). Investors: Sequoia Capital, Andreessen Horowitz, Y Combinator. Key Metrics: $48M ARR, 118% net dollar retention, 95% logo retention. Recognition: Forbes Cloud 100, Y Combinator Top Companies.",
+    "last_updated": "2025-01-10",
+    "access_level": "all_employees"
+  },
+  {
+    "id": "kb_010",
+    "category": "benefits",
+    "title": "Employee Benefits and Perks",
+    "department": "hr",
+    "content": "HEALTH & WELLNESS: Medical: Aetna PPO (company pays 100% for employee, 80% for family), Dental: Delta Dental PPO, Vision: VSP, Mental Health: Talkspace + Modern Health unlimited. 401k: Fidelity 401k with 4% company match (immediate vesting). PAID TIME OFF: Unlimited PTO policy (manager approval required), Minimum 15 days/year encouraged. 12 company holidays + week off between Christmas and New Year. Parental leave: 16 weeks paid (primary), 8 weeks (secondary). PERKS: Home office stipend $500/year, Learning & development budget $2000/year, Company laptop (MacBook Pro for most roles), Phone reimbursement $100/month, Gym membership $100/month, Team events and offsites quarterly. Equity: All employees receive stock options, 4-year vesting with 1-year cliff.",
+    "last_updated": "2024-07-15",
+    "access_level": "all_employees"
+  }
+]

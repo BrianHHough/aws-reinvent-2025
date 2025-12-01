@@ -1,0 +1,141 @@
+[
+  {
+    "id": "fin_001",
+    "record_type": "quarterly_budget",
+    "fiscal_quarter": "Q4-2024",
+    "department": "engineering",
+    "budget_allocated": 12500000,
+    "actual_spend": 11800000,
+    "utilization": 94.4,
+    "breakdown": {
+      "salaries_benefits": 8200000,
+      "cloud_infrastructure": 2100000,
+      "tools_software": 890000,
+      "contractors": 610000
+    },
+    "remaining_budget": 700000,
+    "headcount": 145,
+    "notes": "Remaining budget approved for Q1 2025 hiring. AWS costs higher than projected due to traffic growth."
+  },
+  {
+    "id": "fin_002",
+    "record_type": "funding",
+    "funding_round": "Series B",
+    "amount": 45000000,
+    "date": "2024-09-15",
+    "lead_investor": "Sequoia Capital",
+    "investment_breakdown": {
+      "sequoia_capital": 30000000,
+      "andreessen_horowitz": 10000000,
+      "existing_investors": 5000000
+    },
+    "post_money_valuation": 380000000,
+    "use_of_funds": {
+      "product_development": 18000000,
+      "sales_marketing": 13500000,
+      "international_expansion": 9000000,
+      "operations": 4500000
+    },
+    "board_changes": "Board seat granted to Sequoia partner",
+    "notes": "Confidential - Board and executive team only. Valuation increase of 2.5x from Series A."
+  },
+  {
+    "id": "fin_003",
+    "record_type": "revenue_forecast",
+    "fiscal_year": "2025",
+    "quarterly_forecast": {
+      "Q1": 8200000,
+      "Q2": 10100000,
+      "Q3": 11800000,
+      "Q4": 14300000
+    },
+    "total_year": 44400000,
+    "yoy_growth": 65,
+    "arr_target_eoy": 58000000,
+    "assumptions": {
+      "monthly_customer_growth": 15,
+      "average_price_increase": 8,
+      "churn_rate": 5
+    },
+    "stretch_goal": 52000000,
+    "notes": "Aggressive but achievable. Depends on EMEA launch success and enterprise upsells."
+  },
+  {
+    "id": "fin_004",
+    "record_type": "quarterly_results",
+    "fiscal_quarter": "Q4-2024",
+    "revenue": 12800000,
+    "target": 11800000,
+    "beat_by_percent": 8.5,
+    "expenses": 9200000,
+    "net_income": 3600000,
+    "gross_margin": 78.9,
+    "arr": 48000000,
+    "customer_count": 847,
+    "customer_growth_qoq": 22,
+    "net_revenue_retention": 118,
+    "notes": "Strong quarter. Beat revenue target. Customer growth accelerating. Gross margin improving."
+  },
+  {
+    "id": "fin_005",
+    "record_type": "department_budget",
+    "fiscal_year": "2025",
+    "department": "sales",
+    "budget_allocated": 18500000,
+    "breakdown": {
+      "salaries_commissions": 14200000,
+      "marketing": 2800000,
+      "tools_software": 950000,
+      "travel_events": 550000
+    },
+    "quota": 35000000,
+    "expected_attainment": 110,
+    "headcount_plan": 82,
+    "notes": "Aggressive hiring plan. 15 new AEs in Q1-Q2. Increased travel budget for customer events."
+  },
+  {
+    "id": "fin_006",
+    "record_type": "expense_report",
+    "fiscal_quarter": "Q3-2024",
+    "total_opex": 8900000,
+    "breakdown": {
+      "personnel": 6200000,
+      "infrastructure": 1800000,
+      "marketing_sales": 650000,
+      "general_admin": 250000
+    },
+    "burn_rate_monthly": 2966666,
+    "runway_months": 18,
+    "notes": "Burn rate increasing due to hiring. Current runway sufficient with Series B funding."
+  },
+  {
+    "id": "fin_007",
+    "record_type": "customer_metrics",
+    "period": "2024-12",
+    "total_arr": 48000000,
+    "new_arr": 2100000,
+    "expansion_arr": 850000,
+    "churned_arr": 340000,
+    "net_new_arr": 2610000,
+    "logo_retention": 95.2,
+    "dollar_retention": 118.3,
+    "average_contract_value": 56660,
+    "notes": "Excellent retention metrics. Expansion revenue growing faster than new business."
+  },
+  {
+    "id": "fin_008",
+    "record_type": "compensation_budget",
+    "fiscal_year": "2025",
+    "total_compensation": 52000000,
+    "breakdown_by_level": {
+      "executives": 4500000,
+      "senior_leadership": 8200000,
+      "managers": 12300000,
+      "individual_contributors": 27000000
+    },
+    "equity_pool": 12000000,
+    "bonus_pool": 5200000,
+    "merit_increase_budget": 2600000,
+    "notes": "5% average merit increase. Competitive equity packages for senior hires. Executive comp aligned with board-approved plan."
+  }
+]
