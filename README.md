@@ -1,5 +1,6 @@
-# AWS re:Invent 2025 - FinStack AI Security Demo
-## Red Team / Blue Team: Building Secure AI Agents
+# Red Team vs. Blue Team: Securing AI Agents
+
+![](./slides/CoverPhoto.png)
 
 ---
 
@@ -18,6 +19,18 @@ This repository contains a demonstration application for a cybersecurity talk at
 - Natural language interface powered by Claude
 
 But V1 is intentionally built WITHOUT security controls to demonstrate real-world attack vectors that exist in many production AI systems today.
+
+---
+
+
+## 📸 Video Recording
+
+<a href="https://www.youtube.com/watch?v=RnKZva1DHp4" target="_blank" rel="noopener noreferrer">
+  <img src="./slides/cover.png" alt="Watch on YouTube">
+</a>
+
+<i><a href="https://www.youtube.com/watch?v=RnKZva1DHp4" target="_blank" rel="noopener noreferrer"> See the video on YouTube here </a></i>
+
 
 ---
 
